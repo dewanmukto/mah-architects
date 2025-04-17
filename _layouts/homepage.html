@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/alternating-section.css">
+<link rel="stylesheet" href="css/values.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- Navbar -->
+{% include navbar.html %}
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <img src="{{ page.hero_image }}" class="hero-image" alt="{{ page.hero_alt }}">
+  <div class="text-overlay">
+    <h1 class="main-title">{{ page.hero_title }}</h1>
+    <p class="subtitle">{{ page.hero_subtitle }}</p>
+  </div>
+</section>
+
+<!-- Why Choose Section -->
+<section class="centered-values">
+  <h2>{{ page.why_choose_title }}</h2>
+</section>
+
+<!-- Alternating Image-Text Section -->
+<section class="alternating-section">
+  {% for section in page.alternating_sections %}
+  <div class="alt-row{% if section.reverse %} reverse{% endif %}">
+    <div class="alt-text">
+      <h2>{{ section.title }}</h2>
+      <p>{{ section.description }}</p>
+      <a href="{{ section.link }}" class="alt-link">Explore <span class="underscore">_</span></a>
+    </div>
+    <div class="alt-images">
+      {% for image in section.images %}
+      <img src="{{ image.src }}" class="{{ image.class }}" />
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+<!-- Centered Value Statement -->
+<section class="centered-values">
+  <h2>{{ page.value_statement }}</h2>
+  <div class="value-links">
+    <a href="{{ page.value_links.learn_more }}" class="primary-link">Learn more about our values</a>
+    <a href="{{ page.value_links.join_us }}" class="secondary-link">Become part of us</a>
+  </div>
+</section>
+
+<!-- Footer -->
+{% include footer.html %}
+
+<script src="script.js"></script>
