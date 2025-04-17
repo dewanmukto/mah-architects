@@ -1,48 +1,70 @@
-.alternating-section {
-    background: white;
-    padding: 4rem 2rem;
+/* Alternating Backgrounds for Variety */
+.alt-row:nth-child(odd) {
+  background: linear-gradient(to right, #f9f9f9, #fff);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+}
+.alt-row:nth-child(even) {
+  background: linear-gradient(to left, #eef1f5, #ffffff);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+}
+
+/* Animate on Scroll Setup */
+.alt-row {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.alt-row.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image Enhancements */
+.alt-images img {
+  transition: all 0.6s ease;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.alt-images img:hover {
+  transform: scale(1.05) rotate(1deg);
+  z-index: 1;
+}
+
+/* Text Style Animations */
+.alt-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  animation: slideUpFade 1s ease-out forwards;
+}
+
+.alt-text p {
+  font-size: 1.1rem;
+  color: #444;
+  animation: slideUpFade 1.2s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  .alt-row {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-  .alt-row.reverse {
-    flex-direction: row-reverse;
-  }
-  .alt-images {
-    position: relative;
-    display: flex;
-    gap: 1rem;
-  }
-  .alt-images img {
-    transition: 0.5s;
-    max-width: 250px;
-    height: auto;
-  }
-  .focused {
-    filter: none;
+  to {
     opacity: 1;
+    transform: translateY(0);
   }
-  .unfocused {
-    filter: grayscale(100%);
-    opacity: 0.5;
-  }
-  .alt-text {
-    flex: 1;
-  }
-  .alt-link {
-    color: #1245a8;
-    display: inline-block;
-    margin-top: 1rem;
-  }
-  .alt-link .underscore {
-    transition: all 0.3s;
-  }
-  .alt-link:hover .underscore {
-    content: "→";
-    color: #1245a8;
-    font-weight: bold;
-  }
-  
+}
+
+/* Optional: fun line under h2 */
+.alt-text h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #1245a8;
+  margin-top: 10px;
+}

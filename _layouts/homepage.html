@@ -131,6 +131,23 @@ layout: default
   </div>
 </section>
 
+<script>
+  // Intersection Observer to detect when alt-rows enter the viewport
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".alt-row").forEach(row => {
+    observer.observe(row);
+  });
+</script>
 
 <!-- Gallery section -->
 <div class="gallerycontainer">
