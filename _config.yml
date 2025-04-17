@@ -3,17 +3,20 @@ email: contact@maharchitects.com
 description: >- 
   MAH Architects Inc. is an Ontario-based architecture firm offering residential, commercial, and institutional designs.
 baseurl: "" # Leave blank for GitHub Pages at root
-url: "https://dewanmukto.github.io" # Replace with your actual GitHub Pages URL
+url: "https://maharch.muxday.com" # Replace with your actual GitHub Pages URL
 
 # Homepage dynamic content
 hero:
   title: "We are the architectural specialists you need!"
   description: >
-    **MAH Architects Inc.**, previously known as A&A, was established in 2018 in Ontario, Canada. 
-    We offer services across various sectors, using BIM and RAIC/OAA standards.
+    **MAH Architects Inc.**, previously known as A&A, was established in 2018 in Ontario, Canada. The firm has completed numerous projects and offers architectural services for various building types, including residential, commercial, retail, industrial, institutional, restaurant and café, healthcare, and hospitality facilities such as hotels and motels.
 
 why_choose_us: >
-  We believe great architecture is a collaborative process. Our team comprises registered architects, engineers, and designers.
+  MAH Architects Inc. is dedicated to client-first sustainable architecture. We believe great architecture is a collaborative process, reflecting the input and ideas of everyone involved rather than solely the architect's vision.
+    Our team comprises licensed, registered, and experienced architects, visionary designers, and supporting engineering professionals. This integrated team efficiently leverages their expertise to create architectural masterpieces.
+    Our working tools included modern technology such as **Building Information Modeling software (BIM)** and contract administration software to ensure seamless construction and compliance with jurisdictional construction standards. 
+    Our practice rules and regulations are followed as standardized by the **Royal Architectural Institute of Canada (RAIC)**, **Ontario Association of Architects (OAA)**, and other local and International regulatory bodies.
+
 
 # Markdown processing
 markdown: kramdown
