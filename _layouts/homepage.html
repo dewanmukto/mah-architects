@@ -132,7 +132,6 @@ layout: default
 </section>
 
 <script>
-  // Intersection Observer to detect when alt-rows enter the viewport
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
@@ -141,7 +140,7 @@ layout: default
         }
       });
     },
-    { threshold: 0.2 }
+    { threshold: 0.15 }
   );
 
   document.querySelectorAll(".alt-row").forEach(row => {

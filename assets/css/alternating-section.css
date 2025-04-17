@@ -1,70 +1,94 @@
-/* Alternating Backgrounds for Variety */
-.alt-row:nth-child(odd) {
-  background: linear-gradient(to right, #f9f9f9, #fff);
-  padding: 3rem 2rem;
-  border-radius: 12px;
-}
-.alt-row:nth-child(even) {
-  background: linear-gradient(to left, #eef1f5, #ffffff);
-  padding: 3rem 2rem;
-  border-radius: 12px;
+/* Global tweaks */
+.alternating-section {
+  padding: 4rem 1.5rem;
 }
 
-/* Animate on Scroll Setup */
+/* === Shared alt-row styles === */
 .alt-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 4rem;
+  border-radius: 16px;
+  padding: 3rem 2rem;
   opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
 .alt-row.in-view {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Image Enhancements */
-.alt-images img {
-  transition: all 0.6s ease;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
+/* === Themed backgrounds per row === */
+.alt-row:nth-of-type(1) { background: #f5faff; flex-direction: row; }
+.alt-row:nth-of-type(2) { background: #fff4f0; flex-direction: row-reverse; }
+.alt-row:nth-of-type(3) { background: #f7f9f2; flex-direction: column; text-align: center; }
+.alt-row:nth-of-type(4) { background: #f0f7ff; flex-direction: row; }
+.alt-row:nth-of-type(5) { background: #fef7fc; flex-direction: row-reverse; }
+.alt-row:nth-of-type(6) { background: #f3fff7; flex-direction: column-reverse; text-align: center; }
+.alt-row:nth-of-type(7) { background: #f5f5f5; flex-direction: row; }
+.alt-row:nth-of-type(8) { background: #fffaf2; flex-direction: row-reverse; }
 
+/* Image container */
+.alt-images {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.alt-images img {
+  max-width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 .alt-images img:hover {
   transform: scale(1.05) rotate(1deg);
-  z-index: 1;
 }
 
-/* Text Style Animations */
+/* Text container */
+.alt-text {
+  flex: 1;
+  padding: 1rem 2rem;
+}
 .alt-text h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 1rem;
   position: relative;
-  animation: slideUpFade 1s ease-out forwards;
 }
-
-.alt-text p {
-  font-size: 1.1rem;
-  color: #444;
-  animation: slideUpFade 1.2s ease-out forwards;
-}
-
-@keyframes slideUpFade {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Optional: fun line under h2 */
 .alt-text h2::after {
   content: '';
-  display: block;
-  width: 50px;
+  width: 40px;
   height: 3px;
   background: #1245a8;
-  margin-top: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+.alt-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Column layout image focus (for vertical stacks) */
+.alt-row:nth-of-type(3) .alt-images img,
+.alt-row:nth-of-type(6) .alt-images img {
+  max-width: 150px;
+}
+
+/* Media Queries for Responsive */
+@media (max-width: 768px) {
+  .alt-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .alt-text {
+    padding: 1rem 0;
+  }
 }
