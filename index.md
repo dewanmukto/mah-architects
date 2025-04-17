@@ -1,7 +1,7 @@
 ---
 layout: homepage
 title: MAH Architects Inc.
-hero_image: "images/project_images/bangladesh/Apartment Building at Banani, Dhaka.jpg"
+hero_image: "images/project_images/canada/220 ruggle render 11.jpg"
 hero_alt: "Hero Image"
 hero_title: "We are the architectural specialists you need!"
 hero_subtitle: "MAH Architects Inc., previously known as A&A, was established in 2018 in Ontario, Canada. The firm has completed numerous projects and offers architectural services for various building types, including residential, commercial, retail, industrial, institutional, restaurant and café, healthcare, and hospitality facilities such as hotels and motels."
