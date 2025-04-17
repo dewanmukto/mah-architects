@@ -9,6 +9,7 @@
     margin-top: 1rem;
     text-decoration-line: underline;
     text-decoration-thickness: 5px;
+    text-decoration-color:  #1245a8;
   }
   .primary-link {
     color: #1245a8;
@@ -17,6 +18,8 @@
   .secondary-link {
     color: #121212;
     margin: 0 1rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
   }
   .primary-link:hover,
   .secondary-link:hover {
