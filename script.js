@@ -97,7 +97,7 @@ const imageData = [
 
 const gallery = document.getElementById("gallery");
 
-let images = [];
+let gallery_images = [];
 
 imageData.forEach((data, index) => {
   const img = document.createElement("img");
@@ -106,17 +106,17 @@ imageData.forEach((data, index) => {
   img.style.opacity = `${1 - index * 0.2}`;
   img.style.setProperty('--rotation', `${Math.random() * 20 - 10}deg`);
   gallery.appendChild(img);
-  images.push(img);
+  gallery_images.push(img);
 });
 
 let currentTop = 0;
 
 setInterval(() => {
-  currentTop = (currentTop + 1) % images.length;
+  currentTop = (currentTop + 1) % gallery_images.length;
 
-  images.forEach((img, i) => {
-    const relativeIndex = (i - currentTop + images.length) % images.length;
-    img.style.zIndex = images.length - relativeIndex;
+  gallery_images.forEach((img, i) => {
+    const relativeIndex = (i - currentTop + gallery_images.length) % gallery_images.length;
+    img.style.zIndex = gallery_images.length - relativeIndex;
     img.style.opacity = `${1 - relativeIndex * 0.2}`;
   });
 }, 3000);
