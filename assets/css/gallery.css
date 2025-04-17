@@ -1,4 +1,4 @@
-.gallery-container {
+.gallerycontainer {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -12,12 +12,13 @@
   position: relative;
   background: #fff;
   border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
 .gallery img {
   position: absolute;
-  width: 30%;
+  width: 50%;
   left: 10%;
   top: 10%;
   border-radius: 12px;
