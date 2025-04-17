@@ -1,7 +1,7 @@
 // Burger Menu
-document.getElementById("burger").addEventListener("click", () => {
+/* document.getElementById("burger").addEventListener("click", () => {
   document.getElementById("mobileMenu").classList.toggle("active");
-});
+}); */
 
 // Sticky Navbar Show/Hide on Scroll
 let lastScroll = 0;
