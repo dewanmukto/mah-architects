@@ -7,6 +7,8 @@
   }
   .value-links {
     margin-top: 1rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 5px;
   }
   .primary-link {
     color: #1245a8;
