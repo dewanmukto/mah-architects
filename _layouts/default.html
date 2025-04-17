@@ -108,30 +108,30 @@
   ];
   
   const gallery = document.getElementById("gallery");
-  
-  let gallery_images = [];
-  
-  imageData.forEach((data, index) => {
-    const img = document.createElement("img");
-    img.src = data.src;
-    img.style.zIndex = imageData.length - index;
-    img.style.opacity = `${1 - index * 0.2}`;
-    img.style.setProperty('--rotation', `${Math.random() * 20 - 10}deg`);
-    gallery.appendChild(img);
-    gallery_images.push(img);
+
+let galleryimages = [];
+
+imageData.forEach((data, index) => {
+  const img = document.createElement("img");
+  img.src = data.src;
+  img.style.zIndex = imageData.length - index;
+  img.style.opacity = `${1 - index * 0.2}`;
+  img.style.setProperty('--rotation', `${Math.random() * 20 - 10}deg`);
+  gallery.appendChild(img);
+  galleryimages.push(img);
+});
+
+let currentTop = 0;
+
+setInterval(() => {
+  currentTop = (currentTop + 1) % galleryimages.length;
+
+  galleryimages.forEach((img, i) => {
+    const relativeIndex = (i - currentTop + galleryimages.length) % galleryimages.length;
+    img.style.zIndex = galleryimages.length - relativeIndex;
+    img.style.opacity = `${1 - relativeIndex * 0.2}`;
   });
-  
-  let currentTop = 0;
-  
-  setInterval(() => {
-    currentTop = (currentTop + 1) % gallery_images.length;
-  
-    gallery_images.forEach((img, i) => {
-      const relativeIndex = (i - currentTop + gallery_images.length) % gallery_images.length;
-      img.style.zIndex = gallery_images.length - relativeIndex;
-      img.style.opacity = `${1 - relativeIndex * 0.2}`;
-    });
-  }, 3000);
+}, 3000);
   
   </script>
   
