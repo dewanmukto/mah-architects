@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="/css/contact.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- Contact Header -->
+  <main id="content" role="main" class="contact-main">
+    <div class="page-header">
+      <h1>{{ page.header }}</h1>
+      <div class="header-block-text">
+        <div class="text-block">
+          <p>{{ page.intro }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links horz-center">
+      <h2>Connect with us</h2>
+      <div class="social-links-list">
+        {% for social in page.social_links %}
+        <div class="social-block">
+          <a target="_blank" href="{{ social.url }}">
+            <img src="{{ social.icon }}" alt="{{ social.name }} icon">
+            <img class="hover-icon" src="{{ social.hover_icon }}" alt="{{ social.name }} hover icon">
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Office Info -->
+    <div class="office-grid offices-4">
+      {% for office in page.offices %}
+      <div class="office-grid-item">
+        <img src="{{ office.flag }}" alt="{{ office.name }} flag">
+        <h3>{{ office.name }}</h3>
+        <pre class="address">{{ office.address }}</pre>
+      </div>
+      {% endfor %}
+    </div>
+  </main>
