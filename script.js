@@ -35,8 +35,8 @@ const images = [
 
 const texts = [
   {
-    title: 'We are the architectural specialists you need!',
-    subtitle: 'MAH Architects Inc., previously known as A&A, was established in 2018 in Ontario, Canada. The firm has completed numerous projects and offers architectural services for various building types, including residential, commercial, retail, industrial, institutional, restaurant and café, healthcare, and hospitality facilities such as hotels and motels.'
+    title: 'Architecture & Planning Excellence',
+    subtitle: "Designing tomorrow's spaces where vision meets structure"
   },
   {
     title: 'Creating spaces that inspire communities.',
