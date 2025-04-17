@@ -20,6 +20,7 @@
     margin: 0 1rem;
     text-decoration-line: underline;
     text-decoration-thickness: 2px;
+    text-decoration-color:  #121212;
   }
   .primary-link:hover,
   .secondary-link:hover {

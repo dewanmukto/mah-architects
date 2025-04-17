@@ -88,6 +88,7 @@ function updateContent() {
 // Initial load
 updateContent();
 
+// Gallery section
 const imageData = [
   { src: "images/sketches/image1.jpeg" },
   { src: "images/sketches/image2.jpeg" },
