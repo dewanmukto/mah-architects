@@ -122,3 +122,11 @@ setInterval(() => {
   });
 }, 3000);
 
+// About section
+function toggleWhy() {
+  const title = document.querySelector(".collapsible-title");
+  const content = document.getElementById("whyContent");
+
+  title.classList.toggle("active");
+  content.classList.toggle("open");
+}

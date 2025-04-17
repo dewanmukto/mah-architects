@@ -1,0 +1,72 @@
+.about-section,
+.why-architects,
+.services-section {
+  margin: 40px 0;
+  padding: 20px;
+  border-left: 4px solid #333;
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.collapsible-title {
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.collapsible-title::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.collapsible-title.active::after {
+  content: "−";
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.collapsible-content.open {
+  max-height: 1000px;
+}
+
+.services-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.services-tags span {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.services-tags span:hover {
+  background-color: #444;
+}

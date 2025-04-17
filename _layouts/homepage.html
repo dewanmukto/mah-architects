@@ -3,6 +3,7 @@ layout: default
 ---
 
  <link rel="stylesheet" href="/assets/css/gallery.css">
+ <link rel="stylesheet" href="/assets/css/about.css">
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -21,6 +22,7 @@ layout: default
  <p>{{ page.why_choose_text }}</p>
 </section>
 
+<!-- Gallery section -->
 <div class="gallery-container">
     <div class="gallery" id="gallery"></div>
     <div class="tags">
@@ -35,23 +37,41 @@ layout: default
     </div>
   </div>
 
-<!-- Alternating Image-Text Section -->
-<section class="alternating-section">
-  {% for section in page.alternating_sections %}
-  <div class="alt-row{% if section.reverse %} reverse{% endif %}">
-    <div class="alt-text">
-      <h2>{{ section.title }}</h2>
-      <p>{{ section.description }}</p>
-      <a href="{{ section.link }}" class="alt-link">Explore <span class="underscore">_</span></a>
-    </div>
-    <div class="alt-images">
-      {% for image in section.images %}
-      <img src="{{ image.src }}" class="{{ image.class }}" />
-      {% endfor %}
+  <!-- About section -->
+  <div class="about-section">
+    <h2>About</h2>
+    <p>
+      <strong>MAH Architects Inc.</strong>, previously known as A&A, was established in 2018 in Ontario, Canada. 
+      The firm has completed numerous projects and offers architectural services for various building types, including residential, commercial, retail, industrial, institutional, restaurant and café, healthcare, and hospitality facilities such as hotels and motels.
+    </p>
+  </div>
+  
+  <div class="why-architects">
+    <h2 onclick="toggleWhy()" class="collapsible-title">Why Your Project Requires Architects?</h2>
+    <div id="whyContent" class="collapsible-content">
+      <p>
+        The Architect, who functions as advisor, coordinator, and technical manager, in addition to being a creative artist, can design and administer a contract that ensures a project is completed on time, within budget, and meets the required standards of quality.
+      </p>
+      <p>
+        According to Ontario jurisdiction by law, certain types of projects must involve an architect to ensure public health, safety, welfare, sustainable growth, and environmental protection. When determining if your project requires architectural services, hiring a qualified architect can be beneficial. Architects have expertise in built environments and are knowledgeable about complex regulatory requirements such as building codes, zoning bylaws, the construction process, and environmental considerations.
+      </p>
     </div>
   </div>
-  {% endfor %}
-</section>
+  
+  <!-- Services section -->
+  <div class="services-section">
+    <h2>Services We Offer</h2>
+    <div class="services-tags">
+      <span>Feasibility Studies / Facility Assessments</span>
+      <span>Architectural and Interior Design</span>
+      <span>Zoning Amendment / Site Plan Approvals</span>
+      <span>Committee of Adjustments / Building Permit</span>
+      <span>Structural and MEP Engineering Supports</span>
+      <span>Bidding and Contract Negotiations</span>
+      <span>Project Contract Admin & Construction Management</span>
+    </div>
+  </div>
+  
 
 <!-- Centered Value Statement -->
 <section class="centered-values">
