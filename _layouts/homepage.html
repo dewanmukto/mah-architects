@@ -218,15 +218,17 @@ layout: default
     </div>
   </div>
 
-  <!-- Office Info -->
-  <div class="office-grid offices-4">
-    {% for office in page.offices %}
-    <div class="office-grid-item">
-      <img src="{{ office.flag }}" alt="{{ office.name }} flag">
-      <h3>{{ office.name }}</h3>
-      <pre class="address">{{ office.address }}</pre>
-    </div>
-    {% endfor %}
-  </div>
 </main>
+<!-- End of margined container -->
+</div>
+
+<!-- Office Info -->
+<div class="office-grid offices-4">
+  {% for office in page.offices %}
+  <div class="office-grid-item">
+    <img src="{{ office.flag }}" alt="{{ office.name }} flag">
+    <h3>{{ office.name }}</h3>
+    <pre class="address">{{ office.address }}</pre>
+  </div>
+  {% endfor %}
 </div>
