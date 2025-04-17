@@ -4,6 +4,14 @@ layout: default
 
  <link rel="stylesheet" href="/assets/css/gallery.css">
  <link rel="stylesheet" href="/assets/css/about.css">
+ <style>
+  .content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+ </style>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -21,6 +29,8 @@ layout: default
 <section class="alternating-section">
  <p>{{ page.why_choose_text }}</p>
 </section>
+
+<div class="content-container">
 
 <!-- Gallery section -->
 <div class="gallery-container">
@@ -60,6 +70,7 @@ layout: default
   
   <!-- Services section -->
   <div class="services-section">
+    <h2 onclick="toggleWhy()" class="collapsible-title">Services We Offer</h2>
     <h2>Services We Offer</h2>
     <div class="services-tags">
       <span>Feasibility Studies / Facility Assessments</span>
@@ -81,4 +92,4 @@ layout: default
     <a href="{{ page.value_links.join_us }}" class="secondary-link">Become part of us</a> -->
   </div>
 </section>
-
+</div>
