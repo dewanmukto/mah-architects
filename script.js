@@ -88,4 +88,36 @@ function updateContent() {
 // Initial load
 updateContent();
 
+const imageData = [
+  { src: "images/sketches/image1.jpeg" },
+  { src: "images/sketches/image2.jpeg" },
+  { src: "images/sketches/image3.jpeg" },
+  { src: "images/sketches/image4.jpeg" }
+];
+
+const gallery = document.getElementById("gallery");
+
+let images = [];
+
+imageData.forEach((data, index) => {
+  const img = document.createElement("img");
+  img.src = data.src;
+  img.style.zIndex = imageData.length - index;
+  img.style.opacity = `${1 - index * 0.2}`;
+  img.style.setProperty('--rotation', `${Math.random() * 20 - 10}deg`);
+  gallery.appendChild(img);
+  images.push(img);
+});
+
+let currentTop = 0;
+
+setInterval(() => {
+  currentTop = (currentTop + 1) % images.length;
+
+  images.forEach((img, i) => {
+    const relativeIndex = (i - currentTop + images.length) % images.length;
+    img.style.zIndex = images.length - relativeIndex;
+    img.style.opacity = `${1 - relativeIndex * 0.2}`;
+  });
+}, 3000);
 
