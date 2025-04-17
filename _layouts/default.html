@@ -13,6 +13,16 @@
   <link rel="stylesheet" href="/assets/css/contact.css">
   <link rel="stylesheet" href="/assets/css/footer.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=1280, user-scalable=no">
+</head>
+<body>
+
+  {% include navbar.html %}
+  {{ content }}
+  {% include footer.html %}
+
   <script>
     // Sticky Navbar Show/Hide on Scroll
   let lastScroll = 0;
@@ -134,15 +144,5 @@ setInterval(() => {
 }, 3000);
   
   </script>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=1280, user-scalable=no">
-</head>
-<body>
-
-  {% include navbar.html %}
-  {{ content }}
-  {% include footer.html %}
-
 </body>
 </html>
