@@ -13,9 +13,6 @@ layout: default
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-<!-- Navbar -->
-{% include navbar.html %}
-
 <!-- Hero Section -->
 <section class="hero-section">
   <img src="{{ page.hero_image }}" class="hero-image" alt="{{ page.hero_alt }}">
@@ -28,6 +25,7 @@ layout: default
 <!-- Why Choose Section -->
 <section class="centered-values">
   <h2>{{ page.why_choose_title }}</h2>
+<p>{{ page.why_choose_text }}</p>
 </section>
 
 <!-- Alternating Image-Text Section -->

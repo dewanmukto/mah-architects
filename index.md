@@ -6,6 +6,10 @@ hero_alt: "Hero Image"
 hero_title: "We are the architectural specialists you need!"
 hero_subtitle: "MAH Architects Inc., previously known as A&A, was established in 2018 in Ontario, Canada. The firm has completed numerous projects and offers architectural services for various building types, including residential, commercial, retail, industrial, institutional, restaurant and café, healthcare, and hospitality facilities such as hotels and motels."
 why_choose_title: "Why Choose Us?"
+why_choose_text: "MAH Architects Inc. is dedicated to client-first sustainable architecture. We believe great architecture is a collaborative process, reflecting the input and ideas of everyone involved rather than solely the architect's vision.
+    Our team comprises licensed, registered, and experienced architects, visionary designers, and supporting engineering professionals. This integrated team efficiently leverages their expertise to create architectural masterpieces.
+    Our working tools included modern technology such as Building Information Modeling software (BIM) and contract administration software to ensure seamless construction and compliance with jurisdictional construction standards. 
+    Our practice rules and regulations are followed as standardized by the Royal Architectural Institute of Canada (RAIC), Ontario Association of Architects (OAA), and other local and International regulatory bodies."
 
 alternating_sections:
   - title: "Project Title"
