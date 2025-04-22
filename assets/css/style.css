@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500');
 
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Raleway', sans-serif; /* updated from Helvetica */
   background-color: #fff;
   color: #333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif; /* new: heading font */
 }
 
 .site-header {
@@ -14,14 +20,41 @@ body {
   padding: 1rem 2rem;
 }
 
-.navbar {
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  gap: 2rem;
 }
 
+.logo img {
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* updated navbar to match screenshot */
+.navbar {
+  display: flex;
+  gap: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+/* hero section with updated style */
 .hero {
-  background: linear-gradient(to bottom, #888, #ccc);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.1)); /* updated */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -32,9 +65,11 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* bigger heading */
   line-height: 1.4;
   opacity: 0;
+  margin: 0 2rem;
+  font-family: 'Montserrat', sans-serif; /* enforce font */
 }
 
 .carousel {
@@ -86,4 +121,35 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   align-items: start;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.slide p {
+  margin-top: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+  color: #333;
 }
