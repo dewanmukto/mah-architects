@@ -10,11 +10,11 @@ title: Home
 
 <div class="carousel-wrapper">
   <div class="carousel" id="imageCarousel">
-    <div class="slide"><img src="/images/Multi unit Residential.tif" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
-    <div class="slide"><img src="/images/Custom Houses.tif" alt="Custom Houses"><p>Custom Houses</p></div>
-    <div class="slide"><img src="/images/Commercial Buildings.tif" alt="Commercial Buildings"><p>Commercial Buildings</p></div>
-    <div class="slide"><img src="/images/Industrial Buildings.tif" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
-    <div class="slide"><img src="/images/Institutional Buildings.tif" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Multi unit Residential.tif" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
+    <div class="slide"><img src="/images/projects/Custom Houses.tif" alt="Custom Houses"><p>Custom Houses</p></div>
+    <div class="slide"><img src="/images/projects/Commercial Buildings.tif" alt="Commercial Buildings"><p>Commercial Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Industrial Buildings.tif" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Institutional Buildings.tif" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
  </div>
 </div>
 
@@ -59,13 +59,13 @@ process, and environmental considerations.
   </div>
   <div>
     <h2>Jurisdictions We had Experience</h2>
-    <img src="/images/jury.png" alt="Jurisdictions" style="width:100%; height:auto;">
+    <img src="/images/logos/jury.png" alt="Jurisdictions" style="width:100%; height:auto;">
   </div>
 </div>
 
 <div class="team-section columns-3">
   <div class="team-member">
-    <img src="/images/Alamgir1.jpg" alt="Mohd Alamgir Hossain">
+    <img src="/images/team/Alamgir1.jpg" alt="Mohd Alamgir Hossain">
     <div>
       <h3>Mohd Alamgir Hossain</h3>
       <p>Principal Architect<br />OAA. MRAIC. MIAB.<br />Designated RHFAC professional</p>
@@ -78,14 +78,14 @@ incorporating universal accessible design principles in the built environment.</
     </div>
   </div>
   <div class="team-member">
-    <img src="/images/Babita.png" alt="Babita Babita">
+    <img src="/images/team/Babita.png" alt="Babita Babita">
     <div>
       <h3>Babita Babita</h3>
       <p>Administrative Assistant</p>
     </div>
   </div>
   <div class="team-member">
-    <img src="/images/Mohona.jpg" alt="Mohona Das Orthi">
+    <img src="/images/team/Mohona.jpg" alt="Mohona Das Orthi">
     <div>
       <h3>Mohona Das Orthi</h3>
       <p>Architectural Designer</p>
@@ -110,9 +110,9 @@ standards.</p>
 Architectural Institute of Canada (RAIC)</b>, <b>Ontario Association of Architects (OAA)</b>, 
 and other local and International regulatory bodies.</p>
     <div style="display:flex; gap:1rem; margin-top:1rem;">
-      <img src="/images/OAA Logo.jpg" width="100">
-      <img src="/images/RHFAC Professional.jpg" width="100">
-      <img src="/images/raic-member-2024.png" width="100">
+      <img src="/images/logos/OAA Logo.jpg" width="100">
+      <img src="/images/logos/RHFAC Professional.jpg" width="100">
+      <img src="/images/logos/raic-member-2024.png" width="100">
     </div>
   </div>
   <div class="right-align">
@@ -133,7 +133,7 @@ and other local and International regulatory bodies.</p>
     <div>
       <h3>Residential Buildings</h3>
       <div class="team-member">
-        <img src="/assets/images/project1.jpg" alt="Residential">
+        <img src="/images/sketches/image1.jpeg" alt="Residential">
         <p><b>Single and Multifamily Residential Buildings</b></p>
         <p>MAH Architects Inc. has successfully completed more than fifty (50) residential projects throughout the Greater Toronto Area. This includes custom homes, additions and renovations of residential buildings, as well as duplexes, triplexes, fourplexes, laneway and garden suites, and low to mid-rise condominium developments.</p>
       </div>
@@ -141,7 +141,7 @@ and other local and International regulatory bodies.</p>
     <div>
       <h3>Commercial/ Retail/ Restaurants and Cafe</h3>
       <div class="team-member">
-        <img src="/assets/images/project2.jpg" alt="Commercial">
+        <img src="/images/sketches/image4.jpeg" alt="Commercial">
         <p><b>Mixed-use Commercial, Retail, Restaurants and Café</b></p>
         <p>MAH Architects Inc. provides design services for commercial buildings, including office interior alterations, retail fit-outs, and restaurant/café design within the Greater Toronto Area and globally.</p>
       </div>
@@ -149,7 +149,7 @@ and other local and International regulatory bodies.</p>
     <div>
       <h3>Industrial Buildings</h3>
       <div class="team-member">
-        <img src="/assets/images/project2.jpg" alt="Commercial">
+        <img src="/images/sketches/image3.jpeg" alt="Commercial">
         <p><b>Industrial (Warehouse and Distribution Center)</b></p>
         <p>We have extensive experience in designing, permitting, and administrating the construction
 of warehouses and distribution centers across Ontario and Canada.</p>
@@ -158,7 +158,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
     <div>
       <h3>Hospitality/ Healthcare Facilities</h3>
       <div class="team-member">
-        <img src="/assets/images/project2.jpg" alt="Commercial">
+        <img src="/images/sketches/image2.jpeg" alt="Commercial">
         <p><b>Healthcare Facilities Design</b></p>
         <p>We have experience in designing a 200-bed general hospital for the Bangladesh Navy, along with the specialized design of a trauma and burn unit, as well as an ICU building for CMH Hospital located in Dhaka, Bangladesh.</p>
         <p>We worked on interior alterations for small clinics in Ontario and are dedicated to serving healthcare establishments of all sizes.</p>
@@ -197,8 +197,26 @@ of warehouses and distribution centers across Ontario and Canada.</p>
         <button type="submit">SUBMIT</button>
       </form>
       <div class="social-links">
-        <a href="#"><img src="/images/linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="#"><img src="/images/email-icon.png" alt="Email"></a>
+        <div class="social-links-list">
+          <div class="social-block">
+            <a target="_blank" href="https://www.linkedin.com/company/">
+              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin_170911_183711.svg" alt="LinkedIn icon">
+              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin-b.svg" alt="LinkedIn hover icon">
+            </a>
+          </div>
+          <div class="social-block">
+            <a target="_blank" href="https://www.instagram.com/">
+              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram.png" alt="Instagram icon">
+              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram-b.png" alt="Instagram hover icon">
+            </a>
+          </div>
+          <div class="social-block">
+            <a target="_blank" href="https://www.facebook.com/">
+              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook_170911_183733.svg" alt="Facebook icon">
+              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook-b.svg" alt="Facebook hover icon">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="contact-map">
