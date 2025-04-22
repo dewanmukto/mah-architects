@@ -78,20 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       duration: 1,
       ease: "expo.out"
     });
-  
-    // Projects Section (slide-in each row like a scroll reveal)
-    gsap.from(".projects-section .team-member", {
-      scrollTrigger: {
-        trigger: ".projects-section",
-        start: "top 85%",
-      },
-      opacity: 0,
-      x: -100,
-      duration: 1,
-      stagger: 0.25,
-      ease: "power2.out"
-    });
-  
+    
     // Contact Section (fade and scale-in each column)
     gsap.from(".contact-grid > div", {
       scrollTrigger: {
