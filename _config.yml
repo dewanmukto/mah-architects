@@ -1,8 +1,11 @@
 title: MAH Architects Inc.
-email: contact@maharchitects.com
 description: MAH Architects Inc. is an Ontario-based architecture firm offering residential, commercial, and institutional designs.
 baseurl: "" # Leave blank for GitHub Pages at root, else '/branch'
 url: "https://maharch.muxday.com" # https:// + Domain or GitHub Pages URL
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
 
 # Markdown processing
 markdown: kramdown

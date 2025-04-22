@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.site-header {
+  background: linear-gradient(to right, #ccc, #eee);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero {
+  background: linear-gradient(to bottom, #888, #ccc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  opacity: 0;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.carousel img {
+  max-height: 400px;
+  width: auto;
+}
+
+.about-section, .team-section, .projects-section, .why-us-section, .contact-section {
+  padding: 4rem 2rem;
+}
+
+.columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.team-member img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
