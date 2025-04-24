@@ -7,9 +7,9 @@
     margin-bottom: 2rem;
   }
   
-  /* Team members stacked vertically */
   .team-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     flex-direction: column;
     gap: 3rem;
   }
@@ -49,6 +49,6 @@
   .bio .description {
     font-size: 0.7rem;
     margin-top: 0.5rem;
-    max-width: 100%;
+    max-width: 100px;
   }
   
