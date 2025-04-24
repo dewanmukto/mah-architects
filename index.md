@@ -229,7 +229,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
   <div class="contact-grid">
     <!-- Left Column: Contact Info + Form -->
     <div class="contact-left">
-      <h3>Connect with Us</h3>
+      <h2>Connect with Us</h2>
       <p>MAH Architects Inc.<br>
          155 Desbourne Blvd.<br>
          Brampton, ON L6T 1K1

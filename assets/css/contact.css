@@ -80,7 +80,7 @@
 .social-links {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 4.2rem;
 }
 
 .social-links a {
