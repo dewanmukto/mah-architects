@@ -3,13 +3,17 @@ layout: default
 title: Home
 ---
 
-<!-- Home section -->
-<div class="hero">
+<!-- Hero Section -->
+<section class="hero">
   <div class="veil"></div>
-  <h1>Architecture is our Passion<br>and Our Passion is our Profession</h1>
-</div>
+  <div class="tagline">
+    <h1>Architecture is our Passion</h1>
+    <h2>and Our Passion is our Profession</h2>
+  </div>
+</section>
 
-<div class="carousel-wrapper">
+
+<!-- <div class="carousel-wrapper">
   <div class="carousel" id="imageCarousel">
     <div class="slide"><img src="/images/projects/Multi unit Residential.jpg" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
     <div class="slide"><img src="/images/projects/Custom Houses.jpg" alt="Custom Houses"><p>Custom Houses</p></div>
@@ -17,38 +21,22 @@ title: Home
     <div class="slide"><img src="/images/projects/Industrial Buildings.jpg" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
     <div class="slide"><img src="/images/projects/Institutional Buildings.jpg" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
  </div>
-</div>
+</div> -->
 
 <script>
-window.addEventListener('load', () => {
-  const veil = document.querySelector('.veil');
-  const heroText = document.querySelector('.hero-text');
+  window.addEventListener('load', () => {
+    const veil = document.querySelector('.veil');
+    const tagline = document.querySelector('.tagline');
 
-  setTimeout(() => {
-    heroText.style.opacity = 1;
-    veil.style.opacity = 0;
-  }, 500);
+    setTimeout(() => {
+      tagline.style.opacity = 1;
+      veil.style.opacity = 0;
+    }, 500);
 
-  setTimeout(() => {
-    veil.style.display = 'none';
-  }, 2500);
-
-  setTimeout(() => {
-    startCarousel();
-  }, 3000);
-});
-
-function startCarousel() {
-  const carousel = document.getElementById('imageCarousel');
-  let index = 0;
-
-  setInterval(() => {
-    index = (index + 1) % carousel.children.length;
-    const offset = -index * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
-    carousel.style.transition = 'transform 1s ease-in-out';
-  }, 5000);
-}
+    setTimeout(() => {
+      veil.style.display = 'none';
+    }, 2500);
+  });
 </script>
 
 
@@ -185,7 +173,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
     <div>
       <h3>Accessibility Expertise</h3>
       <div class="team-member">
-        <img src="/assets/images/project2.jpg" alt="Commercial">
+        <img src="/assets/images/Accessibility Image.jpg" alt="Commercial">
         <p><b>Accessibility Assessment and Recommendation</b></p>
         <p>Meaningful accessibility and a universal design approach are key points of our practice. As designated accessibility professionals, we conduct assessments of built environments and provide expert opinions and recommendations to ensure building accessibility for everyone.</p>
       </div>
@@ -193,7 +181,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
     <div>
       <h3>Design and Visualization</h3>
       <div class="team-member">
-        <img src="/assets/images/project2.jpg" alt="Commercial">
+        <img src="/assets/images/image2.jpg" alt="Commercial">
         <p><b>Technical aspects of Design and Visualization</b></p>
         <p>We possess technical expertise and a comprehensive understanding of building codes, by laws, and regulations. Our team consists of specialists in BIM who simulate, analyze, and optimize design and construction complexities upfront to ensure successful implementation.</p>
         <p>Real-time 3D visualization is crucial for understanding the spatial, qualitative, material, and aesthetic aspects of building designs. It aids our design process, allowing clients and teams to conduct upfront reviews and contribute to creating a final masterpiece.</p>
