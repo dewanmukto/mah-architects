@@ -10,6 +10,7 @@ title: Home
     <h1>Architecture is our Passion</h1>
     <h2>and Our Passion is our Profession</h2>
   </div>
+  <div class="caption"></div>
 </section>
 
 <script>
@@ -21,13 +22,23 @@ title: Home
     "/images/projects/Institutional Buildings.jpg"
   ];
 
+  const captions = [
+    "Multi-Unit Residential",
+    "Custom Houses",
+    "Commercial Buildings",
+    "Industrial Buildings",
+    "Institutional Buildings"
+  ];
+
   let currentIndex = 0;
   const hero = document.querySelector('.hero-carousel');
   const veil = document.querySelector('.veil');
   const tagline = document.querySelector('.tagline');
+  const caption = document.querySelector('.caption');
 
-  // Set initial background
+  // Set initial background and caption
   hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+  caption.textContent = captions[currentIndex];
 
   window.addEventListener('load', () => {
     setTimeout(() => {
@@ -37,14 +48,23 @@ title: Home
 
     setTimeout(() => {
       veil.remove();
+      tagline.style.opacity = 0;
+      caption.style.opacity = 1;
     }, 2500);
 
     setInterval(() => {
       currentIndex = (currentIndex + 1) % imageUrls.length;
       hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+
+      caption.style.opacity = 0;
+      setTimeout(() => {
+        caption.textContent = captions[currentIndex];
+        caption.style.opacity = 1;
+      }, 800);
     }, 5000);
   });
 </script>
+
 
 <!-- About section -->
 
