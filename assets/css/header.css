@@ -1,0 +1,39 @@
+.site-header {
+    background: linear-gradient(to right, #ccc, #eee);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem 2rem;
+  }
+  
+  .nav-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #444;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #000;
+  }
+  

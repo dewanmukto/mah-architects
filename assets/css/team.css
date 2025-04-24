@@ -1,0 +1,16 @@
+.team-section {
+    padding: 4rem 2rem;
+  }
+  
+  .team-member {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .team-member img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+  }
+  
