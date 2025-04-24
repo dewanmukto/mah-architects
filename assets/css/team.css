@@ -9,30 +9,29 @@
   
   .team-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
   }
   
   .team-member {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
-    position: relative;
+    gap: 1.5rem;
   }
   
   .team-member img {
-    width: 100%;
+    width: 150px;
     height: auto;
     object-fit: cover;
-    display: block;
+    flex-shrink: 0;
   }
   
-  .team-member figcaption {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: black;
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: left;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
   
