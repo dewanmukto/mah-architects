@@ -183,7 +183,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
     <div>
       <h3>Accessibility Expertise</h3>
       <div class="team-member">
-        <img src="/assets/images/Accessibility Image.jpg" alt="Commercial">
+        <img src="/images/accessib.jpg" alt="Commercial">
         <p><b>Accessibility Assessment and Recommendation</b></p>
         <p>Meaningful accessibility and a universal design approach are key points of our practice. As designated accessibility professionals, we conduct assessments of built environments and provide expert opinions and recommendations to ensure building accessibility for everyone.</p>
       </div>
@@ -191,7 +191,7 @@ of warehouses and distribution centers across Ontario and Canada.</p>
     <div>
       <h3>Design and Visualization</h3>
       <div class="team-member">
-        <img src="/assets/images/image2.jpg" alt="Commercial">
+        <img src="/images/projects/220 ruggle render 11.jpg" alt="Commercial">
         <p><b>Technical aspects of Design and Visualization</b></p>
         <p>We possess technical expertise and a comprehensive understanding of building codes, by laws, and regulations. Our team consists of specialists in BIM who simulate, analyze, and optimize design and construction complexities upfront to ensure successful implementation.</p>
         <p>Real-time 3D visualization is crucial for understanding the spatial, qualitative, material, and aesthetic aspects of building designs. It aids our design process, allowing clients and teams to conduct upfront reviews and contribute to creating a final masterpiece.</p>
