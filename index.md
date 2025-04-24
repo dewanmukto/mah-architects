@@ -225,9 +225,8 @@ of warehouses and distribution centers across Ontario and Canada.</p>
 </div>
 
 <!-- Contact Section -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <div id="contact" class="contact-section">
-  <div class="contact-container">
+  <div class="contact-wrapper">
     <div class="contact-left">
       <h3>Connect with Us</h3>
       <p>MAH Architects Inc.<br>
@@ -242,10 +241,20 @@ of warehouses and distribution centers across Ontario and Canada.</p>
         <textarea placeholder="YOUR MESSAGE" required></textarea>
         <button type="submit">Submit</button>
       </form>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/company/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <!-- Social Icons Row (bottom of left column) -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/" target="_blank">
+          <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin_170911_183711.svg" alt="LinkedIn">
+          <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin-b.svg" alt="LinkedIn hover">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram.png" alt="Instagram">
+          <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram-b.png" alt="Instagram hover">
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook_170911_183733.svg" alt="Facebook">
+          <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook-b.svg" alt="Facebook hover">
+        </a>
       </div>
     </div>
     <div class="contact-right">
