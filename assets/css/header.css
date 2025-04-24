@@ -1,5 +1,6 @@
 .site-header {
-    background: linear-gradient(to right, #ccc, #eee);
+    background-color: #aaa;
+    color: white;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -29,7 +30,6 @@
   
   .navbar a {
     text-decoration: none;
-    color: #444;
     transition: color 0.2s;
   }
   
