@@ -36,7 +36,6 @@ title: Home
   const tagline = document.querySelector('.tagline');
   const caption = document.querySelector('.caption');
 
-  // Set initial background and caption
   hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
   caption.textContent = captions[currentIndex];
 
@@ -98,35 +97,43 @@ process, and environmental considerations.
   </div>
 </div>
 
-<div class="team-section columns-3">
-  <div class="team-member">
-    <img src="/images/team/Alamgir1.jpg" alt="Mohd Alamgir Hossain">
-    <div>
-      <h3>Mohd Alamgir Hossain</h3>
-      <p>Principal Architect<br />OAA. MRAIC. MIAB.<br />Designated RHFAC professional</p>
-      <p>Alamgir; a licensed and registered Architect at OAA, a member of RAIC, IAB, and a 
-designated RHFAC accessibility professional with over 20 years of experience in the 
-architectural service industry. His practice encompasses various project types, including 
-residential, commercial, industrial, retail, restaurant and café, institutional, healthcare, 
-and hospitality facilities. A core principle of his practice is sustainability and adaptability, 
-incorporating universal accessible design principles in the built environment.</p>
-    </div>
+<section class="team-section">
+  <h2>Team</h2>
+  <div class="team-grid">
+    <figure class="team-member">
+      <img src="/images/team/Alamgir1.jpg" alt="Mohd Alamgir Hossain">
+      <figcaption>
+        <strong>Mohd Alamgir Hossain</strong><br>
+        Principal Architect<br>
+        OAA. MRAIC. MIAB.<br>
+        Designated RHFAC professional<br><br>
+        <small>
+          Alamgir; a licensed and registered Architect at OAA, a member of RAIC, IAB, and a 
+          designated RHFAC accessibility professional with over 20 years of experience in the 
+          architectural service industry. His practice encompasses various project types, including 
+          residential, commercial, industrial, retail, restaurant and café, institutional, healthcare, 
+          and hospitality facilities. A core principle of his practice is sustainability and adaptability, 
+          incorporating universal accessible design principles in the built environment.
+        </small>
+      </figcaption>
+    </figure>
+    <figure class="team-member">
+      <img src="/images/team/Babita.png" alt="Babita Babita">
+      <figcaption>
+        <strong>Babita Babita</strong><br>
+        Administrative Assistant
+      </figcaption>
+    </figure>
+    <figure class="team-member">
+      <img src="/images/team/Mohona.jpg" alt="Mohona Das Orthi">
+      <figcaption>
+        <strong>Mohona Das Orthi</strong><br>
+        Architectural Designer
+      </figcaption>
+    </figure>
   </div>
-  <div class="team-member">
-    <img src="/images/team/Babita.png" alt="Babita Babita">
-    <div>
-      <h3>Babita Babita</h3>
-      <p>Administrative Assistant</p>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="/images/team/Mohona.jpg" alt="Mohona Das Orthi">
-    <div>
-      <h3>Mohona Das Orthi</h3>
-      <p>Architectural Designer</p>
-    </div>
-  </div>
-</div>
+</section>
+
 
 <div class="why-us-section columns-2">
   <div>
