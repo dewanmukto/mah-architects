@@ -13,7 +13,7 @@ title: Home
 </section>
 
 
-<!-- <div class="carousel-wrapper">
+<div class="carousel-wrapper">
   <div class="carousel" id="imageCarousel">
     <div class="slide"><img src="/images/projects/Multi unit Residential.jpg" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
     <div class="slide"><img src="/images/projects/Custom Houses.jpg" alt="Custom Houses"><p>Custom Houses</p></div>
@@ -21,7 +21,7 @@ title: Home
     <div class="slide"><img src="/images/projects/Industrial Buildings.jpg" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
     <div class="slide"><img src="/images/projects/Institutional Buildings.jpg" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
  </div>
-</div> -->
+</div>
 
 <script>
   window.addEventListener('load', () => {
