@@ -105,7 +105,7 @@ process, and environmental considerations.
       <div class="bio">
         <h3>Mohd Alamgir Hossain</h3>
         <p>Principal Architect<br>OAA. MRAIC. MIAB.<br>Designated RHFAC professional</p>
-        <p>
+        <p class="description">
           Alamgir; a licensed and registered Architect at OAA, a member of RAIC, IAB, and a 
           designated RHFAC accessibility professional with over 20 years of experience in the 
           architectural service industry. His practice encompasses various project types, including 
