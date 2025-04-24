@@ -226,7 +226,8 @@ of warehouses and distribution centers across Ontario and Canada.</p>
 
 <!-- Contact Section -->
 <div id="contact" class="contact-section">
-  <div class="contact-wrapper">
+  <div class="contact-grid">
+    <!-- Left Column: Contact Info + Form -->
     <div class="contact-left">
       <h3>Connect with Us</h3>
       <p>MAH Architects Inc.<br>
@@ -241,7 +242,9 @@ of warehouses and distribution centers across Ontario and Canada.</p>
         <textarea placeholder="YOUR MESSAGE" required></textarea>
         <button type="submit">Submit</button>
       </form>
-      <!-- Social Icons Row (bottom of left column) -->
+    </div>
+    <!-- Middle Column: Social Icons -->
+    <div class="contact-middle">
       <div class="social-links">
         <a href="https://www.linkedin.com/company/" target="_blank">
           <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin_170911_183711.svg" alt="LinkedIn">
@@ -257,9 +260,11 @@ of warehouses and distribution centers across Ontario and Canada.</p>
         </a>
       </div>
     </div>
+    <!-- Right Column: Map -->
     <div class="contact-right">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.6828932546!2d-79.6918444!3d43.71713869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d33b2710b6f%3A0x3ffe1b6e9c4970fe!2sMAH%20Architects%20Inc.!5e0!3m2!1sen!2sbd!4v1745314083923!5m2!1sen!2sbd"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </div>
+
