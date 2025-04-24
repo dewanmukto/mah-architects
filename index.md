@@ -265,11 +265,11 @@ We worked on interior alterations for small clinics in Ontario and are dedicated
          Brampton, ON L6T 1K1
       </p>
       <p>mail: <a href="mailto:maharchitectsinc@outlook.com">maharchitectsinc@outlook.com</a></p>
-      <form class="contact-form">
-        <input type="text" placeholder="FULL NAME" required>
-        <input type="email" placeholder="EMAIL" required>
-        <input type="tel" placeholder="PHONE" required>
-        <textarea placeholder="YOUR MESSAGE" required></textarea>
+      <form class="contact-form" action="https://formspree.io/f/mldbeyyj" method="POST">
+        <input type="text" name="name" placeholder="FULL NAME" required>
+        <input type="email" name="email" placeholder="EMAIL" required>
+        <input type="tel" name="phone" placeholder="PHONE" required>
+        <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>
