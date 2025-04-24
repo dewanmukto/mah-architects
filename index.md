@@ -43,13 +43,16 @@ title: Home
   window.addEventListener('load', () => {
     setTimeout(() => {
       tagline.style.opacity = 1;
+    }, 50);
+
+    setTimeout(() => {
       veil.style.opacity = 0;
     }, 500);
 
     setTimeout(() => {
-      veil.remove();
       tagline.style.opacity = 0;
       caption.style.opacity = 1;
+      veil.remove();
     }, 2500);
 
     setInterval(() => {
