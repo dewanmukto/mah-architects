@@ -1,4 +1,32 @@
 .projects-section {
-    padding: 4rem 2rem;
-  }
-  
+  padding: 4rem 2rem;
+}
+
+.project-block {
+  margin-bottom: 3rem;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-text p {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-block h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
