@@ -30,25 +30,21 @@ title: Home
   hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
 
   window.addEventListener('load', () => {
-    // Fade in tagline and fade out veil
     setTimeout(() => {
       tagline.style.opacity = 1;
       veil.style.opacity = 0;
     }, 500);
 
-    // Remove veil from DOM
     setTimeout(() => {
       veil.remove();
     }, 2500);
 
-    // Start background image carousel
     setInterval(() => {
       currentIndex = (currentIndex + 1) % imageUrls.length;
       hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
-    }, 5000); // change image every 5 seconds
+    }, 5000);
   });
 </script>
-
 
 <!-- About section -->
 
@@ -126,9 +122,9 @@ standards.</p>
 Architectural Institute of Canada (RAIC)</b>, <b>Ontario Association of Architects (OAA)</b>, 
 and other local and International regulatory bodies.</p>
     <div style="display:flex; gap:1rem; margin-top:1rem;">
-      <img src="/images/logos/OAA Logo.jpg" width="100">
-      <img src="/images/logos/RHFAC Professional.jpg" width="100">
-      <img src="/images/logos/raic-member-2024.png" width="100">
+      <img src="/images/logos/OAA Logo.jpg" height="100">
+      <img src="/images/logos/RHFAC Professional.jpg" height="100">
+      <img src="/images/logos/raic-member-2024.png" height="100">
     </div>
   </div>
   <div class="right-align">
