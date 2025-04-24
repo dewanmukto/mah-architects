@@ -3,8 +3,8 @@ layout: default
 title: Home
 ---
 
-<!-- Hero Section -->
-<section class="hero">
+<!-- Hero Section with Carousel -->
+<section class="hero-carousel">
   <div class="veil"></div>
   <div class="tagline">
     <h1>Architecture is our Passion</h1>
@@ -12,30 +12,40 @@ title: Home
   </div>
 </section>
 
-
-<div class="carousel-wrapper">
-  <div class="carousel" id="imageCarousel">
-    <div class="slide"><img src="/images/projects/Multi unit Residential.jpg" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
-    <div class="slide"><img src="/images/projects/Custom Houses.jpg" alt="Custom Houses"><p>Custom Houses</p></div>
-    <div class="slide"><img src="/images/projects/Commercial Buildings.jpg" alt="Commercial Buildings"><p>Commercial Buildings</p></div>
-    <div class="slide"><img src="/images/projects/Industrial Buildings.jpg" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
-    <div class="slide"><img src="/images/projects/Institutional Buildings.jpg" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
- </div>
-</div>
-
 <script>
-  window.addEventListener('load', () => {
-    const veil = document.querySelector('.veil');
-    const tagline = document.querySelector('.tagline');
+  const imageUrls = [
+    "/images/projects/Multi unit Residential.jpg",
+    "/images/projects/Custom Houses.jpg",
+    "/images/projects/Commercial Buildings.jpg",
+    "/images/projects/Industrial Buildings.jpg",
+    "/images/projects/Institutional Buildings.jpg"
+  ];
 
+  let currentIndex = 0;
+  const hero = document.querySelector('.hero-carousel');
+  const veil = document.querySelector('.veil');
+  const tagline = document.querySelector('.tagline');
+
+  // Set initial background
+  hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+
+  window.addEventListener('load', () => {
+    // Fade in tagline and fade out veil
     setTimeout(() => {
       tagline.style.opacity = 1;
       veil.style.opacity = 0;
     }, 500);
 
+    // Remove veil from DOM
     setTimeout(() => {
-      veil.style.display = 'none';
+      veil.remove();
     }, 2500);
+
+    // Start background image carousel
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % imageUrls.length;
+      hero.style.backgroundImage = `url('${imageUrls[currentIndex]}')`;
+    }, 5000); // change image every 5 seconds
   });
 </script>
 
