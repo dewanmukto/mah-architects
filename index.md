@@ -72,7 +72,7 @@ title: Home
 
 <div id="about" class="about-section columns-2">
   <div>
-    <p><b>About</b></p>
+    <h2>About</h2>
     <p><b>MAH Architects Inc.</b>, previously known as A&A, was established in 2018 in Ontario, 
 Canada. The firm has completed numerous projects and offers architectural services for 
 various building types, including residential, commercial, retail, industrial, institutional, 
@@ -224,43 +224,33 @@ of warehouses and distribution centers across Ontario and Canada.</p>
   </div>
 </div>
 
-<!-- Contact section -->
+<!-- Contact Section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <div id="contact" class="contact-section">
-  <h2>Connect with Us</h2>
-  <div class="contact-grid">
-    <div class="contact-form">
-      <form>
+  <div class="contact-container">
+    <div class="contact-left">
+      <h3>Connect with Us</h3>
+      <p>MAH Architects Inc.<br>
+         155 Desbourne Blvd.<br>
+         Brampton, ON L6T 1K1
+      </p>
+      <p>mail: <a href="mailto:maharchitectsinc@outlook.com">maharchitectsinc@outlook.com</a></p>
+      <form class="contact-form">
         <input type="text" placeholder="FULL NAME" required>
         <input type="email" placeholder="EMAIL" required>
         <input type="tel" placeholder="PHONE" required>
         <textarea placeholder="YOUR MESSAGE" required></textarea>
-        <button type="submit">SUBMIT</button>
+        <button type="submit">Submit</button>
       </form>
-      <div class="social-links">
-        <div class="social-links-list">
-          <div class="social-block">
-            <a target="_blank" href="https://www.linkedin.com/company/">
-              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin_170911_183711.svg" alt="LinkedIn icon">
-              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/linkedin-b.svg" alt="LinkedIn hover icon">
-            </a>
-          </div>
-          <div class="social-block">
-            <a target="_blank" href="https://www.instagram.com/">
-              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram.png" alt="Instagram icon">
-              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/instagram-b.png" alt="Instagram hover icon">
-            </a>
-          </div>
-          <div class="social-block">
-            <a target="_blank" href="https://www.facebook.com/">
-              <img src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook_170911_183733.svg" alt="Facebook icon">
-              <img class="hover-icon" src="https://s3-us-west-2.amazonaws.com/handel-architects/images/facebook-b.svg" alt="Facebook hover icon">
-            </a>
-          </div>
-        </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/company/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
-    <div class="contact-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.6828932546!2d-79.6918444!3d43.71713869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d33b2710b6f%3A0x3ffe1b6e9c4970fe!2sMAH%20Architects%20Inc.!5e0!3m2!1sen!2sbd!4v1745314083923!5m2!1sen!2sbd" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contact-right">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.6828932546!2d-79.6918444!3d43.71713869999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3d33b2710b6f%3A0x3ffe1b6e9c4970fe!2sMAH%20Architects%20Inc.!5e0!3m2!1sen!2sbd!4v1745314083923!5m2!1sen!2sbd"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </div>
