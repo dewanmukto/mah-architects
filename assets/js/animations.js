@@ -7,19 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power4.out"
     });
   
-    // Carousel Section (fade-in with stagger)
-    gsap.from(".slide", {
-      scrollTrigger: {
-        trigger: ".carousel-wrapper",
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      stagger: 0.3,
-      ease: "power2.out"
-    });
-  
     // About Section (split entrance: left text from left, image from right)
     gsap.from("#about > div:first-child", {
       scrollTrigger: {
