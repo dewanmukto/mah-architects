@@ -5,34 +5,52 @@ title: Home
 
 <!-- Home section -->
 <div class="hero">
+  <div class="veil"></div>
   <h1>Architecture is our Passion<br>and Our Passion is our Profession</h1>
 </div>
 
 <div class="carousel-wrapper">
   <div class="carousel" id="imageCarousel">
-    <div class="slide"><img src="/images/projects/Multi unit Residential.tif" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
-    <div class="slide"><img src="/images/projects/Custom Houses.tif" alt="Custom Houses"><p>Custom Houses</p></div>
-    <div class="slide"><img src="/images/projects/Commercial Buildings.tif" alt="Commercial Buildings"><p>Commercial Buildings</p></div>
-    <div class="slide"><img src="/images/projects/Industrial Buildings.tif" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
-    <div class="slide"><img src="/images/projects/Institutional Buildings.tif" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Multi unit Residential.jpg" alt="Multi Unit Residential"><p>Multi Unit Residential</p></div>
+    <div class="slide"><img src="/images/projects/Custom Houses.jpg" alt="Custom Houses"><p>Custom Houses</p></div>
+    <div class="slide"><img src="/images/projects/Commercial Buildings.jpg" alt="Commercial Buildings"><p>Commercial Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Industrial Buildings.jpg" alt="Industrial Buildings"><p>Industrial Buildings</p></div>
+    <div class="slide"><img src="/images/projects/Institutional Buildings.jpg" alt="Institutional Buildings"><p>Institutional Buildings</p></div>
  </div>
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const carousel = document.getElementById('imageCarousel');
-    const slides = document.querySelectorAll('.slide');
-    let index = 0;
+window.addEventListener('load', () => {
+  const veil = document.querySelector('.veil');
+  const heroText = document.querySelector('.hero-text');
 
-    function rotateCarousel() {
-      index = (index + 1) % slides.length;
-      const offset = -index * 100;
-      carousel.style.transform = `translateX(${offset}%)`;
-    }
+  setTimeout(() => {
+    heroText.style.opacity = 1;
+    veil.style.opacity = 0;
+  }, 500);
 
-    setInterval(rotateCarousel, 5000); // change every 5 seconds
-  });
+  setTimeout(() => {
+    veil.style.display = 'none';
+  }, 2500);
+
+  setTimeout(() => {
+    startCarousel();
+  }, 3000);
+});
+
+function startCarousel() {
+  const carousel = document.getElementById('imageCarousel');
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % carousel.children.length;
+    const offset = -index * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+    carousel.style.transition = 'transform 1s ease-in-out';
+  }, 5000);
+}
 </script>
+
 
 <!-- About section -->
 
