@@ -92,7 +92,7 @@ process, and environmental considerations.
   </div>
   <div>
     <h2>Jurisdictions We had Experience</h2>
-    <img src="/images/logos/jury.png" alt="Jurisdictions" style="width:150%; height:auto;">
+    <img src="/images/logos/jury.png" alt="Jurisdictions" style="width:100%; height:auto;">
   </div>
 </div>
 

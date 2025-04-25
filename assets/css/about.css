@@ -1,9 +1,9 @@
 .about-section {
   padding: 4rem 2rem;
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 2rem; */
 }
 .about-section > div:last-child {
   text-align: right;
