@@ -22,7 +22,7 @@
   }
   
   .team-member img {
-    aspect-ratio: 9 / 20;
+    aspect-ratio: 9 / 16;
     height: 370px; /* Keep natural portrait shape */
     width: auto;
     object-fit: contain;

@@ -1,4 +1,11 @@
 .about-section {
-    padding: 4rem 2rem;
-  }
-  
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.about-section > div:last-child {
+  text-align: right;
+  margin-left: auto;
+}
