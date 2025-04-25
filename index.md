@@ -92,7 +92,7 @@ process, and environmental considerations.
   </div>
   <div>
     <h2>Jurisdictions We had Experience</h2>
-    <img src="/images/logos/jury.png" alt="Jurisdictions" style="width:100%; height:auto;">
+    <img src="/images/logos/jury.png" alt="Jurisdictions" style="width:80%; height:auto;">
   </div>
 </div>
 
@@ -149,7 +149,7 @@ standards.</p>
 Architectural Institute of Canada (RAIC)</b>, <b>Ontario Association of Architects (OAA)</b>, 
 and other local and International regulatory bodies.</p>
     <div style="display:flex; gap:1rem; margin-top:1rem;">
-      <img src="/images/logos/OAA Logo.png" height="72px">
+      <img src="/images/logos/OAA Logo.png" height="75px">
       <img src="/images/logos/RHFAC Professional.png" height="80px">
       <img src="/images/logos/raic-member-2024.png" height="80px">
     </div>
